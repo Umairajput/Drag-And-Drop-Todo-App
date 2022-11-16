@@ -1,0 +1,165 @@
+*{
+  font-family: cursive;
+  margin: 0px;
+  padding: 0px;
+}
+.main{
+  height: 100vh;
+  background-color: #001b35;
+}
+.heading{
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+}
+.container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.cards{
+  margin-top: 50px;
+  height: 73vh;
+  width: 30%;
+  background-color: rgb(187, 175, 206);
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card_inner_div{
+  height: 10vh;
+  width: 100%;
+  background-color: #003e78;
+}
+.btn_div{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+.paragraph{
+  padding: 10px 0px;
+  font-size: 20px;
+}
+.paragraph2{
+  color: white;
+  font-size: 20px;
+  padding-top: 17px;
+  padding-left: 15px;
+}
+.btn{
+  padding-top: 18px !important;
+  background-color: transparent !important;
+  border: none !important;
+  font-size: 20px !important;
+  color: white !important;
+}
+p{
+  margin: 0px !important;
+}
+.input{
+  width: 100%;
+  height: 4vh;
+  border: 1px solid gray;
+}
+.input:hover{
+  border: 1px solid blue;
+}
+.input:focus {
+  border: 1px solid blue;
+  box-shadow: blue 0px 0px 2px;
+  outline: none;
+}
+.input::after {
+  filter: blur(10px);
+}
+.text_area{
+  width: 100%;
+  border: 1px solid gray;
+}
+.text_area:hover{
+  border: 1px solid blue;
+}
+.text_area:focus {
+  border: 1px solid blue;
+  box-shadow: blue 0px 0px 2px;
+  outline: none;
+}
+.spn{
+  color: red;
+}
+.description_div{
+  margin-top: 20px;
+}
+.todo_list{
+  height: 13vh;
+  width: 93%;
+  background-color: white;
+  padding-left: 10px;
+  margin: 10px;
+  cursor: grab;
+}
+.button_div{
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+.button{
+  background-color: blue;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.cancel{
+  background-color: red !important;
+  margin: 0px 20px;
+}
+.button:hover{
+  background-color: white;
+  border: 2px solid blue;
+  color: blue;
+  font-weight: bold;
+}
+.cancel:hover{
+  background-color: white !important; 
+  border: 2px solid red !important;
+  color: red;
+  font-weight: bold;
+}
+.todo{
+  font-size: 20px;
+  padding: 5px 0px;
+  width: 97%;
+  color: black;
+  border-bottom: 1px solid gray;
+}
+.text{
+  font-size: 20px;
+  color: gray;
+}
+.todo_div{
+  display: flex;
+  justify-content: space-between;
+}
+.icon{
+  font-size: 20px !important;
+  margin-top: 4px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 700px) {
+  .container {
+    display: block;
+    padding-top: 10px;
+  }.cards{
+    margin: 50px auto;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+    .cards{
+      width: 80%;
+    }
+}
